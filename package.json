@@ -1,5 +1,9 @@
 {
   "author": "Pablion <pabloyshi@gmail.com>",
+  "bin": {
+    "algorand-auction-cli": "./dist/bin/algorand-auction-cli.js",
+    "aac": "./dist/bin/algorand-auction-cli.js"
+  },
   "dependencies": {},
   "description": "An interactive NodeJS CLI version of algorand auction-demo repo with Typescript. Also a byproduct of personal studying.",
   "devDependencies": {
@@ -9,6 +13,10 @@
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.4.4"
   },
+  "keywords": [
+    "algorand",
+    "cli"
+  ],
   "license": "MIT",
   "main": "src/app.ts",
   "name": "algorand-auction-cli",

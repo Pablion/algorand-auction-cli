@@ -3,7 +3,16 @@
 An interactive NodeJS CLI version of algorand auction-demo repo with Typescript. Also a byproduct of personal studying.
 Link: [algorand/auction-demo](https://github.com/algorand/auction-demo).
 
-## cli usage example
+## Install
+
+Do `yarn install` then `yarn build`.
+This package will add two CLI commands: `algorand-auction-cli` and `algorand`
+
+### Trouble shooting
+
+- [Permission denied for package after using yarn link](https://github.com/yarnpkg/yarn/issues/3587)
+
+## CLI usage example
 
 ### Var
 
@@ -12,14 +21,14 @@ $AA_USER          # username of current user
 $AA_AUCTION_ID    # auction id of current auction
 ```
 
-### type and class
+### Type and class
 
 ```shell
 <str_num>      # parse 20k; 20m; 200_000; 2,000;
 <auction_info> # auction info like start time and end time etc.
 ```
 
-### user
+### User
 
 ```shell
 aa sign --user <username> --key <key>   # create a user with name:<username> and key:<key>
@@ -50,3 +59,7 @@ aa auction bid <str_num>       # bid on an auction. require AA_USER
 aa raise <str_num>             #
 aa auction raise <str_num>     # bid with <last_bid>+<str_num> on an auction. require AA_USER
 ```
+
+## Contribute
+
+There's no contribution guide. You can PR whatever you want.
