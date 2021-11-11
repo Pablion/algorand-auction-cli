@@ -1,7 +1,7 @@
 # algorand-auction-cli
 
-A byproduct of personal studying.
-The whole thing runs locally
+An interactive NodeJS CLI version of algorand auction-demo repo with Typescript. Also a byproduct of personal studying.
+Link: [algorand/auction-demo](https://github.com/algorand/auction-demo).
 
 ## cli usage example
 
@@ -22,9 +22,9 @@ $AA_AUCTION_ID    # auction id of current auction
 ### user
 
 ```shell
-aa sign --as <username> --key <key>     # create a user with name:<username> and key:<key>
-aa login --as <username> --key <key>    # set AA_USER as <username>
-aa logout
+aa sign --user <username> --key <key>   # create a user with name:<username> and key:<key>
+aa login --user <username> --key <key>  # set AA_USER as <username>
+aa logout                               # clear AA_USER
 ```
 
 ### Auction
@@ -38,9 +38,9 @@ aa list -a          # list all auctions with last bid
 
 #### Auction actions
 
-All commands in this chapter requires AA_USER.
-All commands in this chapter use AA_AUCTION_ID if no flag --auction-id is offered.
-Auction should be open.
+- All commands in this chapter requires AA_USER.
+- All commands in this chapter use AA_AUCTION_ID if no flag --auction-id is offered.
+- Auction should be open to interact with, otherwise will return an error.
 
 ```shell
 aa new <auction_info>          #
